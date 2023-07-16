@@ -16,6 +16,7 @@ h3,
 h4,
 h5,
 h6,
+address,
 p,
 ul,
 ol,
@@ -27,8 +28,20 @@ blockquote {
 
 a {
   color: inherit;
+  font-size: 18px;
+  font-style: normal;
 }
 
 img {
   width: 100%;
+}
+
+p {
+  font-size: 18px;
+  font-style: normal;
+}
+
+li {
+  font-size: 18px;
+  
 }
