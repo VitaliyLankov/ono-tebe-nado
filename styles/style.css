@@ -44,6 +44,75 @@
   line-height: 24px;
 }
 
+.cover {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 757px;
+  z-index: -2;
+}
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
 
+.cover__title {
+  /*display: grid;
+  grid-template-columns: repeat(3, 1fr);*/
+  
+  display: flex;
+  flex-direction: column;
+  padding: 165px 50px 135px;
+  row-gap: 6px;
+  
+}
+
+.cover__title span {
+  display: inline-block;
+  letter-spacing: 0.3em;
+  
+}
+
+.aligned-text {
+
+}
+
+.aligned-text_center {
+  align-self: center;
+}
+
+.aligned-text_right {
+  align-self: end;
+  margin-right: -25px;
+}
+
+.letter-spacing-extended {
+  display: inline-block;
+  margin: 0 20px 0 -25px;
+}
+
+.button-and-subtitle {
+  display: flex;
+  justify-content: end;
+  padding-right: 50px;
+}
+
+.cover h2 {
+  color: #fff;
+  font-size: 22px;
+}
+
+.cover__button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid #fff 1px;
+  font-size: 22px;
+  padding: 0 32px;
+} 
 
