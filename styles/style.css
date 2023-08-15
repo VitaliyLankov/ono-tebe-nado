@@ -13,6 +13,7 @@
   display: flex;
   gap: 33px;
   list-style: circle;
+  font-size: 18px;
 }
 
 .header__links-list-item {
@@ -46,6 +47,8 @@
   text-underline-position: under;
   line-height: 24px;
   max-width: 240px;
+  font-size: 18px;
+  font-style: normal;
 }
 
 .cover {
@@ -54,44 +57,44 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 757px;
-  z-index: -2;
+  min-height: 757px;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
 }
 
 .cover__title {
   display: flex;
   flex-direction: column;
   padding: 165px 50px 125px;
-  row-gap: 6px;
+  row-gap: 6px;  
+  text-transform: uppercase;
+  font-size: 100px;
+  color: #fff;
 }
 
 .cover__title span {
-  display: inline-block;
   letter-spacing: 0.3em;
+  z-index: 1;
 }
 
 .aligned-text_center {
   align-self: center;
-  margin-left: -10px;
+  
 }
 
 .aligned-text_right {
   align-self: end;
-  margin-right: -27px;
+  
 }
 
 .letter-spacing-extended {
-  display: inline-block;
   margin: 0 25px 0 -25px;
 }
 
@@ -101,6 +104,9 @@
   align-items: center;
   padding-right: 50px;
   column-gap: 78px;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #000;
 }
 
 .cover__description-text {
@@ -108,6 +114,7 @@
   font-size: 22px;
   font-weight: normal;
   word-spacing: 0.85em;
+  z-index: 1;
 }
 
 .bet__button {
@@ -116,6 +123,8 @@
   border: solid #fff 1px;
   font-size: 22px;
   padding: 12px 32px;
+  z-index: 1;
+  text-transform: uppercase;
 }
 
 .lots {
@@ -127,6 +136,9 @@
 .lots__heading {
   padding-left: 40px;
   padding-bottom: 27px;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #000;
 }
 
 .lots__card-list {
@@ -135,6 +147,7 @@
   list-style-type: none;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-size: 18px;
 }
 
 .lots__card-list-item {
@@ -171,9 +184,18 @@
   background-position: center;
 }
 
+.card__title {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 .card__text {
   font-size: 20px;
   color: #fff;
+  font-size: 20px;
 }
 
 .lots__look-more-link {
@@ -223,6 +245,9 @@
 
 .about__title {
   padding: 100px 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #000;
 }
 
 .about__text {
@@ -237,7 +262,7 @@
 
 .footer {
   display: flex;
-  padding: 180px 50px 0; 
+  padding: 180px 50px 90px; 
   width: 100%;
   justify-content: space-between;
 }
@@ -252,6 +277,7 @@
 
 .footer__menu-list {
   list-style-type: none;
+  font-size: 18px;
 }
 
 .footer__menu-link-active {
@@ -267,4 +293,5 @@
 
 .footer__social-list-item {
   max-width: 48px;
+  max-height: 48px;
 }
