@@ -19,7 +19,7 @@
 .header__links-list-item {
   text-decoration: underline;
   text-underline-position: under;
-  line-height: 21px;
+  line-height: normal;
   font-weight: normal;
 }
 
@@ -78,21 +78,22 @@
 .cover__title {
   display: flex;
   flex-direction: column;
-  padding: 165px 50px 125px;
-  row-gap: 6px;  
+  padding: 165px 50px 135px;
+  row-gap: 20px;  
   text-transform: uppercase;
   font-size: 100px;
   color: #fff;
-}
-
-.cover__title {
+  line-height: 100%; 
   letter-spacing: 0.3em;
   z-index: 1;
 }
 
+.aligned-text {
+  line-height: 115%;  
+}
+
 .aligned-text_center {
   align-self: center;
-  
 }
 
 .aligned-text_right {
@@ -101,7 +102,7 @@
 }
 
 .letter-spacing-extended {
-  letter-spacing: 0.65em;
+  letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
@@ -134,27 +135,27 @@
   background-color: rgba(0, 0, 0, 0);
   border: solid #fff 1px;
   font-size: 22px;
-  padding: 15px 32px;
+  padding: 13px 32px;
   z-index: 1;
   text-transform: uppercase;
   font-weight: normal;
-  line-height: 21px;
+  line-height: normal;
 }
 
 .lots {
   display: flex;
   flex-direction: column;
-  padding: 195px 50px 0;
+  padding: 180px 50px 0;
 }
 
 .lots__heading {
   padding-left: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   text-transform: uppercase;
   font-size: 40px;
   color: #000;
   font-weight: bold;
-  line-height: 21px;
+  line-height: normal;
 }
 
 .lots__card-list {
@@ -183,6 +184,8 @@
   position: relative;
   height: 100%;
   padding: 50px 40px;
+  background-size: cover;
+  background-position: center;
 }
 
 .card * {
@@ -191,20 +194,14 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card__title {
@@ -232,7 +229,7 @@
   font-size: 20px;
   text-underline-position: under;
   font-weight: normal;
-  line-height: 23px;
+  line-height: normal;
 }
 
 .about {
@@ -277,24 +274,24 @@
   font-size: 40px;
   color: #000;
   font-weight: bold;
-  line-height: 47px;
+  line-height: normal;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 25px;
 }
 
 .about__text_paragraph {
   font-size: 20px;
-  line-height: 23px;
+  line-height: normal;
   font-weight: normal;
 }
 
 .footer {
   display: flex;
-  padding: 185px 50px 90px; 
+  padding: 175px 50px 90px; 
   width: 100%;
   justify-content: space-between;
 }
@@ -312,7 +309,7 @@
 }
 
 .footer__menu-list-item {
-  line-height: 21px;
+  line-height: normal;
   font-weight: normal;
   font-size: 18px;
 }
